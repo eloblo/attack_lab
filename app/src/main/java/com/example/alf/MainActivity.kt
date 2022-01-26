@@ -90,6 +90,10 @@ class MainActivity : AppCompatActivity() {
         var sms = "SMS List: \n"
         val cursor = contentResolver.query(Uri.parse("content://sms/"),null,null,null,null)
         cursor!!.moveToFirst()
+        if(cursor.count == 0){
+            cursor.close()
+            return
+        }
 
         val address = cursor.getColumnIndex("address")
         val date = cursor.getColumnIndex("date")
