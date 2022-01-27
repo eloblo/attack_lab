@@ -1,0 +1,52 @@
+Device Information: 
+        PHONE NUMBER : +15555215554
+        VERSION.RELEASE : 11
+        VERSION.INCREMENTAL : 6903271
+        VERSION.SDK.NUMBER : 30
+        BOARD : goldfish_x86
+        BOOTLOADER : unknown
+        BRAND : google
+        CPU_ABI : x86
+        CPU_ABI2 : armeabi-v7a
+        DISPLAY : RSR1.201013.001
+        FINGERPRINT : google/sdk_gphone_x86/generic_x86_arm:11/RSR1.201013.001/6903271:user/release-keys
+        HARDWARE : ranchu
+        HOST : abfarm-us-west1-c-0089
+        ID : RSR1.201013.001
+        MANUFACTURER : Google
+        MODEL : sdk_gphone_x86
+        PRODUCT : sdk_gphone_x86
+        SERIAL : unknown
+        TAGS : release-keys
+        TYPE : user
+        USER : android-build
+        ANDROID ID : ff9f04098107ee17
+
+Installed aps:
+	com.android.camera2
+	com.android.chrome
+	com.android.contacts
+	com.android.dialer
+	com.android.settings
+	com.android.vending
+	com.google.android.apps.docs
+	com.google.android.apps.maps
+	com.google.android.apps.messaging
+	com.google.android.apps.photos
+	com.google.android.apps.tachyon
+	com.google.android.apps.youtube.music
+	com.google.android.calendar
+	com.google.android.deskclock
+	com.google.android.gm
+	com.google.android.videos
+	com.google.android.youtube
+	com.google.android.documentsui
+	com.google.android.googlequicksearchbox
+	com.google.android.googlequicksearchbox
+	org.chromium.webview_shell
+	com.MagicDate
+	com.ariel.readme
+	com.example.alf
+	com.whatsapp
+SMS List: 
+	12345678952: Thu Jan 27 10:52:32 GMT 2022: 😀
